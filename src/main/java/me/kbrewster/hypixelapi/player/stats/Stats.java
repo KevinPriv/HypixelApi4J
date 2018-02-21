@@ -6,6 +6,9 @@ import me.kbrewster.hypixelapi.player.stats.arena.Arena;
 import me.kbrewster.hypixelapi.player.stats.battlegrounds.BattleGrounds;
 import me.kbrewster.hypixelapi.player.stats.megawalls.Walls3;
 import me.kbrewster.hypixelapi.player.stats.mm.MurderMystery;
+import me.kbrewster.hypixelapi.player.stats.skyclash.SkyClash;
+import me.kbrewster.hypixelapi.player.stats.skywars.Skywars;
+import me.kbrewster.hypixelapi.player.stats.speeduhc.SpeedUHC;
 import me.kbrewster.hypixelapi.player.stats.tnt.TNTGames;
 import me.kbrewster.hypixelapi.player.stats.uhc.UHC;
 import me.kbrewster.hypixelapi.player.stats.vampz.VampireZ;
@@ -31,6 +34,8 @@ public class Stats {
     @Expose
     private UHC UHC;
     @Expose
+    private Skywars SkyWars;
+    @Expose
     private me.kbrewster.hypixelapi.player.stats.gingerbread.GingerBread GingerBread;
     @Expose
     private me.kbrewster.hypixelapi.player.stats.smash.SuperSmash SuperSmash;
@@ -46,7 +51,10 @@ public class Stats {
     private me.kbrewster.hypixelapi.player.stats.paintball.Paintball Paintball;
     @Expose
     private VampireZ VampireZ;
-    //TODO: SPEEDUHC
-    //TODO: SKYCLASH
+    @Expose
+    private SpeedUHC SpeedUHC;
+    @Expose
+    private SkyClash SkyClash;
+
 
 }
