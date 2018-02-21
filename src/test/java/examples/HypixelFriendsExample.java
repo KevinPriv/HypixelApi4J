@@ -4,6 +4,7 @@ import me.kbrewster.hypixelapi.HypixelAPI;
 import me.kbrewster.hypixelapi.friends.Friend;
 import me.kbrewster.mojangapi.MojangAPI;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -18,6 +19,8 @@ public class HypixelFriendsExample {
         HypixelAPI api = new HypixelAPI(KEY);
         UUID uuid = MojangAPI.getUUID("boomboompower");
         List<Friend> friends = api.getFriends(uuid);
+        ArrayList<UUID> friendUuids = new ArrayList<>();
+        ArrayList<UUID> friendNames = new ArrayList<>();
         for (Friend friend : friends) {
             boolean isReciever = friend.getUuidReceiver().equals(MojangAPI.stripDashes(uuid));
             String uuidStr = (isReciever ? friend.getUuidSender() : friend.getUuidReceiver());

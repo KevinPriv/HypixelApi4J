@@ -2,6 +2,7 @@ package examples;
 
 import me.kbrewster.hypixelapi.HypixelAPI;
 import me.kbrewster.hypixelapi.guild.Guild;
+import me.kbrewster.hypixelapi.guild.Member;
 import me.kbrewster.mojangapi.MojangAPI;
 
 import java.util.UUID;
@@ -23,10 +24,10 @@ public class HypixelGuildExample {
         System.out.println("Tag: " + (guild.isCanTag() ? guild.getTag() : "None"));
         System.out.println("Coins: " + guild.getCoins());
         System.out.println("Members: ");
-        guild.getMembers().forEach(member -> {
+        for (Member member : guild.getMembers()) {
             String name = MojangAPI.getName(UUID.fromString(MojangAPI.addDashes(member.getUuid())));
             System.out.println(String.format("%s (%s)", name, member.getRank()));
-        });
+        }
 
     }
 }
