@@ -22,7 +22,7 @@ Gradle
 Adding the dependency:
 ```gradle
     dependencies {
-        compile "com.github.KevinPriv:HypixelApi4J:API-1.6"
+        compile "com.github.KevinPriv:HypixelApi4J:API-1.7"
     }
 
 ```
@@ -42,7 +42,7 @@ Maven
 <dependency>
     <groupId>com.github.KevinPriv</groupId>
     <artifactId>HypixelApi4J</artifactId>
-    <version>API-1.6</version>
+    <version>API-1.7</version>
 </dependency>
 
 ```
